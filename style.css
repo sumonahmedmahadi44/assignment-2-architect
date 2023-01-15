@@ -78,7 +78,7 @@ top: 577px;
     padding: 350px;
    align-items: center;
    justify-content: center;
-   margin-top: -250px;
+   /* margin-top: -250px; */
  }
  .features-right-side{
     display: flex;
@@ -102,23 +102,24 @@ top: 577px;
 
 /* section love and enjoy  */
 
-
 .love-enjoy{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 100px 400px;
-   gap: 20px;
-   margin-top: -300px;
-   
-
+    gap: 150px
+    ;
 }
 .love-text{
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    width: 500px;
+    gap: 50px
+    ;
 }
+.love-img img{
+    height: 600px;
+}
+
+
 .love-title{
     border-left: 2px solid orange;
     padding: 10px;
@@ -134,22 +135,19 @@ top: 577px;
     background: #FFFFFF;
 box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
 }
-.love-img img{
-    height: 600px;
-   
-}
+
 .overflow{
-    position: absolute;
+    
+position: absolute;
+top: 3250px;
+left: 1150px;
 width: 142px;
-height: 50px;
-left: 980px;
-top: 2804px;
-    padding: 20px;
-    border-radius: 10px;
-    border: none;
-    color: white;
-    background-color: orange;
-    text-align: center;
+height: 100px;
+background-color: #FF900E;
+text-align: center;
+padding: 10px;
+color: #FFFFFF;
+
 }
 .span-3{
     font-size: 35px;
@@ -333,3 +331,69 @@ box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
     margin: 150px;
     font-size: 20px;
 }
+
+ /* responsive section  */
+
+
+ @media only screen and (max-width:576px) {
+    .heading{
+        height: 1000px;
+        width: 100%;
+    }
+    .heading-tools, .tools-bar,.love-enjoy {
+        flex-direction: column;
+        align-items: center;
+    }
+   .img-banner{
+    position: static;
+    width: 100%;
+    height: 100%;
+   }
+   .features {
+    flex-direction: column;
+    padding: 200px 0 0 40px;
+    width: 100vw;
+    gap: 20px
+    ;}
+    .love-enjoy {
+       padding: 10px;
+       gap: 50px
+       ;
+    }
+    .love-img img {
+        width: 100%;
+        height: 500px;
+    }
+    .overflow{
+        position: static;
+    }
+    .facts{
+        padding: 20px 10px;
+    }
+    .icons {
+        grid-template-columns: repeat(1,1fr);
+        padding:0 20px;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    .sopnsor-img{
+        grid-template-columns: repeat(1,1fr);
+        gap: 40px;
+        margin-bottom: 20px;
+        padding: 20px 100px;
+    }
+    .skill-title{
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .my-skills{
+        width: 100%;
+    }
+    .footer{
+        margin: 0 auto;
+        height: 100%;
+
+    }
+}
+ 
+ 
