@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Work Sans', sans-serif;
+    box-sizing: border-box;
 }
 
 /* header section  */
@@ -220,7 +221,103 @@ top: 2804px;
 
  /* Bonas section  */
 
- 
+ .skill-title{
+    font: 35px;
+    font-weight: 700;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: #FFFFFF;
+box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    width: 400px;
+    text-align: center;
+  
+    margin: 0 40% 100px 40%;
+
+ }
+ .my-skills{
+    background-color: #FF900E;
+    width: 1000px;
+    padding: 20px;
+    color: white;
+    margin: 0 auto;
+ }
+ .my-skills li{
+    list-style: none;
+    margin: 50px 0;
+    font-size: 25px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    position: relative;
+ }
+ .my-skills li::before{
+
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 5px;
+    background-color: lightgrey;
+    width: 100%;
+    height: 25px;
+    border-radius: 1000px;
+ }
+ .my-skills li::after{
+
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 5px;
+    background-color: black;
+    width: 0;
+    height: 25px;
+    border-radius: 1000px;
+
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    -o-animation-direction: forward;
+ }
+ .my-skills li.cricket::after{
+    animation-name: cricket;
+ }
+ @keyframes cricket{
+    to{
+        width: 90%;
+    }
+ }
+ .my-skills li.bike::after{
+    animation-name: bike;
+ }
+ @keyframes bike{
+    to{
+        width: 100%;
+    }
+ }
+ .my-skills li.leadership::after{
+    animation-name: leadership;
+ }
+ @keyframes leadership{
+    to{
+        width: 50%;
+    }
+ }
+ .my-skills li.html::after{
+    animation-name: html;
+ }
+ @keyframes html{
+    to{
+        width: 60%;
+    }
+ }
+ .my-skills li.css::after{
+    animation-name: css;
+ }
+ @keyframes css{
+    to{
+        width: 70%;
+    }
+ }
+
 
 
 /* footer  */
